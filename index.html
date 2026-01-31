@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap" rel="stylesheet">
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #1b1b1b, #020202);
+  color: #e6e6e6;
+  overflow-x: hidden;
+  padding: 70px 20px;
+  animation: bgFade 10s ease-in-out infinite alternate;
+}
+
+@keyframes bgFade {
+  0% { background-color: #050505; }
+  100% { background-color: #0b0b0b; }
+}
+
+/* STARS */
+.stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: transparent;
+}
+
+.stars span {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  opacity: 0.6;
+  animation: moveStars linear infinite;
+}
+
+@keyframes moveStars {
+  from { transform: translateY(0); }
+  to { transform: translateY(-120vh); }
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* GLITCH TITLE */
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 900;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  position: relative;
+  animation: glitch 2.5s infinite;
+}
+
+@keyframes glitch {
+  0% { text-shadow: 2px 0 red; }
+  50% { text-shadow: -2px 0 red; }
+  100% { text-shadow: 2px 0 red; }
+}
+
+.subtitle {
+  text-align: center;
+  margin-top: 10px;
+  opacity: 0.7;
+  margin-bottom: 90px;
+}
+
+/* RED DIVIDER */
+.divider {
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(to right, transparent, #b30000, transparent);
+  margin: 90px 0;
+  box-shadow: 0 0 12px rgba(179,0,0,0.6);
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  border-left: 6px solid #b30000;
+  padding-left: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.section {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 22px;
+  padding: 45px;
+  margin-bottom: 60px;
+}
+
+p {
+  margin-bottom: 25px;
+  font-weight: 300;
+  font-size: 1.05rem;
+  line-height: 2;
+}
+
+/* QUOTES */
+.quote {
+  margin: 40px 0;
+  padding: 25px;
+  border-left: 4px solid #b30000;
+  background: rgba(179,0,0,0.08);
+  font-style: italic;
+  animation: fadeIn 2s ease forwards;
+}
+
+.song {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  opacity: 0.65;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* GIFTS */
+.gifts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.gift {
+  background: linear-gradient(145deg, #0f0f0f, #1a1a1a);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 18px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 0 18px rgba(179,0,0,0.3);
+}
+
+.gift h3 {
+  color: #b30000;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 120px;
+  opacity: 0.45;
+  font-size: 0.85rem;
+}
+</style>
+</head>
+
+<body>
+
+<!-- STARS -->
+<div class="stars">
+  <!-- JS will generate stars -->
+</div>
+
+<div class="container">
+
+<h1>Happy Birthday</h1>
+<div class="subtitle">06/02 — this day exists because you do</div>
+
+<div class="section">
+<p>
+I wish distance didn’t exist today. I wish I could be next to you, looking at you, 
+telling you this instead of writing it. But since I can’t close that space,
+I filled it with something that stays.
+</p>
+
+<div class="quote">
+“When life leaves us blind, love keeps us kind.”
+<span class="song">— Linkin Park, <em>The Messenger</em></span>
+</div>
+
+<p>
+This page is proof that you were thought about deeply.
+That your birthday matters. That you matter.
+Not quietly. Not accidentally. Fully.
+</p>
+</div>
+
+<div class="divider"></div>
+
+<h2>How I See You</h2>
+
+<div class="section">
+<p>
+I see how hard you try, even when no one is watching.
+I see the way you carry things you never talk about.
+You keep moving forward even when everything inside you feels heavy.
+</p>
+
+<div class="quote">
+“I want to heal, I want to feel.”
+<span class="song">— Linkin Park, <em>Papercut</em></span>
+</div>
+
+<p>
+You don’t always see your own strength, but it’s there.
+In the way you survive days you never thought you’d get through.
+In the way you keep showing up.
+</p>
+
+<div class="quote">
+“I’m stronger than I was.”
+<span class="song">— Linkin Park, <em>Stronger Than I Was</em></span>
+</div>
+</div>
+
+<div class="divider"></div>
+
+<h2>For The Nights</h2>
+
+<div class="section">
+<p>
+I know there are nights where your thoughts get louder than everything else.
+Where you replay things, doubt yourself, wonder if any of it mattered.
+</p>
+
+<div class="quote">
+“I tried so hard and got so far, but in the end, it doesn’t even matter.”
+<span class="song">— Linkin Park, <em>In the End</em></span>
+</div>
+
+<p>
+Even then, you are still here.
+Still breathing. Still trying.
+And that means more than you realize.
+</p>
+
+<div class="quote">
+“Who cares if one more light goes out?”
+<span class="song">— Linkin Park, <em>One More Light</em></span>
+</div>
+
+<p>
+I care. About your light. About you.
+</p>
+</div>
+
+<div class="divider"></div>
+
+<h2>Birthday Gifts</h2>
+
+<div class="section">
+<p>
+I couldn’t wrap anything or hand it to you.
+So I turned what I could give into something real.
+</p>
+
+<div class="gifts">
+  <div class="gift">
+    <h3>🎧 Music</h3>
+    <p>A playlist made with you in mind. For every mood, every night.</p>
+  </div>
+
+  <div class="gift">
+    <h3>🖤 This Space</h3>
+    <p>A place that exists only because you do.</p>
+  </div>
+
+  <div class="gift">
+    <h3>⏳ Time</h3>
+    <p>Calls, moments, plans — today and after.</p>
+  </div>
+</div>
+</div>
+
+<footer>
+Made with intention. Made for you.
+</footer>
+
+</div>
+
+<script>
+/* Generate stars */
+const starsContainer = document.querySelector('.stars');
+for (let i = 0; i < 120; i++) {
+  const star = document.createElement('span');
+  star.style.left = Math.random() * 100 + '%';
+  star.style.top = Math.random() * 120 + 'vh';
+  star.style.animationDuration = (10 + Math.random() * 20) + 's';
+  starsContainer.appendChild(star);
+}
+</script>
+
+</body>
+</html>
