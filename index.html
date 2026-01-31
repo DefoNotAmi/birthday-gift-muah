@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Happy Birthday</title>
+<title>Happy Birthday, Angel</title>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap" rel="stylesheet">
 
 <style>
@@ -34,7 +34,7 @@ body {
   width: 100%;
   height: 100%;
   pointer-events: none;
-  background: transparent;
+  z-index: 0;
 }
 
 .stars span {
@@ -58,14 +58,13 @@ body {
   z-index: 2;
 }
 
-/* GLITCH TITLE */
+/* TITLE */
 h1 {
   text-align: center;
   font-size: 4rem;
   font-weight: 900;
   letter-spacing: 5px;
   text-transform: uppercase;
-  position: relative;
   animation: glitch 2.5s infinite;
 }
 
@@ -82,13 +81,12 @@ h1 {
   margin-bottom: 90px;
 }
 
-/* RED DIVIDER */
-.divider {
-  height: 2px;
-  width: 100%;
-  background: linear-gradient(to right, transparent, #b30000, transparent);
-  margin: 90px 0;
-  box-shadow: 0 0 12px rgba(179,0,0,0.6);
+/* DIVIDER */
+
+  .divider {
+    height: 1px;
+    background: linear-gradient(to right, transparent, #b30000, transparent);
+    margin: 50px 0;
 }
 
 h2 {
@@ -122,7 +120,6 @@ p {
   border-left: 4px solid #b30000;
   background: rgba(179,0,0,0.08);
   font-style: italic;
-  animation: fadeIn 2s ease forwards;
 }
 
 .song {
@@ -132,9 +129,24 @@ p {
   opacity: 0.65;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+/* SPOTIFY */
+.playlist {
+  border: 2px dashed #b30000;
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(179,0,0,0.4);
+}
+
+.playlist a {
+  color: #b30000;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.playlist a:hover {
+  text-decoration: underline;
 }
 
 /* GIFTS */
@@ -172,9 +184,7 @@ footer {
 <body>
 
 <!-- STARS -->
-<div class="stars">
-  <!-- JS will generate stars -->
-</div>
+<div class="stars"></div>
 
 <div class="container">
 
@@ -183,9 +193,8 @@ footer {
 
 <div class="section">
 <p>
-I wish distance didn’t exist today. I wish I could be next to you, looking at you, 
-telling you this instead of writing it. But since I can’t close that space,
-I filled it with something that stays.
+I wish I could close the distance today. I wish I could show up in ways that don’t require screens or words.
+Since I can’t, I built this instead — something that stays when the moment passes.
 </p>
 
 <div class="quote">
@@ -194,10 +203,12 @@ I filled it with something that stays.
 </div>
 
 <p>
-This page is proof that you were thought about deeply.
-That your birthday matters. That you matter.
-Not quietly. Not accidentally. Fully.
+This is me choosing you, loudly and intentionally.
+This is me celebrating the fact that you’re here, alive, and still trying.
 </p>
+
+<!-- FILL IN: Add a personal sentence about what this birthday means to you -->
+<p><em>[Write what his birthday means to you]</em></p>
 </div>
 
 <div class="divider"></div>
@@ -206,9 +217,9 @@ Not quietly. Not accidentally. Fully.
 
 <div class="section">
 <p>
-I see how hard you try, even when no one is watching.
-I see the way you carry things you never talk about.
-You keep moving forward even when everything inside you feels heavy.
+I see how much you carry without saying anything.
+I see the effort you put into surviving days that don’t feel fair.
+You’re stronger than you give yourself credit for.
 </p>
 
 <div class="quote">
@@ -216,11 +227,8 @@ You keep moving forward even when everything inside you feels heavy.
 <span class="song">— Linkin Park, <em>Papercut</em></span>
 </div>
 
-<p>
-You don’t always see your own strength, but it’s there.
-In the way you survive days you never thought you’d get through.
-In the way you keep showing up.
-</p>
+<!-- FILL IN: Describe him in your own words -->
+<p><em>[Write about who he is to you — his strength, softness, mind, heart]</em></p>
 
 <div class="quote">
 “I’m stronger than I was.”
@@ -230,33 +238,29 @@ In the way you keep showing up.
 
 <div class="divider"></div>
 
-<h2>For The Nights</h2>
+<h2>Your Birthday Soundtrack</h2>
 
 <div class="section">
 <p>
-I know there are nights where your thoughts get louder than everything else.
-Where you replay things, doubt yourself, wonder if any of it mattered.
+I made you a playlist for your birthday.
+Not just songs — feelings.
+Tracks for when you can’t sleep, when you need noise, when silence feels too heavy.
 </p>
 
-<div class="quote">
-“I tried so hard and got so far, but in the end, it doesn’t even matter.”
-<span class="song">— Linkin Park, <em>In the End</em></span>
+<!-- FILL IN: Explain why music matters to you both -->
+<p><em>[Write why you chose these songs / what music means to you and him]</em></p>
+
+<div class="playlist">
+  <p>🎧 This playlist exists because of you.</p>
+  <p>
+    👉 <a href="PASTE_SPOTIFY_PLAYLIST_LINK_HERE" target="_blank">
+      Open your birthday playlist
+    </a>
+  </p>
+
+  <!-- OPTIONAL: You can embed Spotify instead of a link later -->
+  <!-- Paste Spotify iframe here if you want -->
 </div>
-
-<p>
-Even then, you are still here.
-Still breathing. Still trying.
-And that means more than you realize.
-</p>
-
-<div class="quote">
-“Who cares if one more light goes out?”
-<span class="song">— Linkin Park, <em>One More Light</em></span>
-</div>
-
-<p>
-I care. About your light. About you.
-</p>
 </div>
 
 <div class="divider"></div>
@@ -265,30 +269,30 @@ I care. About your light. About you.
 
 <div class="section">
 <p>
-I couldn’t wrap anything or hand it to you.
+I couldn’t wrap anything or put a bow on it.
 So I turned what I could give into something real.
 </p>
 
 <div class="gifts">
   <div class="gift">
-    <h3>🎧 Music</h3>
-    <p>A playlist made with you in mind. For every mood, every night.</p>
+    <h3>♫ Music</h3>
+    <p>The playlist I made for you.</p>
   </div>
 
   <div class="gift">
-    <h3>🖤 This Space</h3>
-    <p>A place that exists only because you do.</p>
+    <h3>.✦ ݁˖ This Space</h3>
+    <p>A place that exists only for you, today.</p>
   </div>
 
   <div class="gift">
-    <h3>⏳ Time</h3>
-    <p>Calls, moments, plans — today and after.</p>
+    <h3>⏱ Time</h3>
+    <p><em>[Mention future calls, plans, or moments together]</em></p>
   </div>
 </div>
 </div>
 
 <footer>
-Made with intention. Made for you.
+ℳ𝐚𝐝𝐞 𝐰𝐢𝐭𝐡 𝐢𝐧𝐭𝐞𝐧𝐭𝐢𝐨𝐧. ℳ𝐚𝐝𝐞 𝐟𝐨𝐫 𝒴ℴ𝓊.
 </footer>
 
 </div>
@@ -296,7 +300,7 @@ Made with intention. Made for you.
 <script>
 /* Generate stars */
 const starsContainer = document.querySelector('.stars');
-for (let i = 0; i < 120; i++) {
+for (let i = 0; i < 140; i++) {
   const star = document.createElement('span');
   star.style.left = Math.random() * 100 + '%';
   star.style.top = Math.random() * 120 + 'vh';
